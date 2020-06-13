@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
-namespace VRAVE
+namespace VR
 {
 public class PlayMusic : MonoBehaviour {
 

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace VRAVE {
+namespace VR {
 	
 public class VisualSteeringWheelController : MonoBehaviour {
 

@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace VRAVE
+namespace VR
 {
 public class EventSystemChecker : MonoBehaviour
 {

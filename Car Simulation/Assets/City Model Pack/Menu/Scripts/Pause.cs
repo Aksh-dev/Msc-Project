@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-namespace VRAVE
+namespace VR
 {
 public class Pause : MonoBehaviour {
 
@@ -68,7 +68,7 @@ public class Pause : MonoBehaviour {
 		isPaused = false;
 		Time.timeScale = 1;
 		showPanels.HidePausePanel ();
-		SceneManager.LoadScene (VRAVEStrings.Lobby_Menu);
+		SceneManager.LoadScene (VRStrings.Lobby_Menu);
 
 	}
 

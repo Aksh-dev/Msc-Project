@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace VRAVE
+namespace VR
 {
-    public static class VRAVEStrings : object
+    public static class VRStrings : object
     {
         public static string AI_Car = "AI_Car";
         public static string Player = "Player";

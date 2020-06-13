@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityStandardAssets.Vehicles.Car;
 
-namespace VRAVE
+namespace VR
 {
 	internal enum CarDriveType
 	{

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace VRAVE
+namespace VR
 {
 public class CameraFade : MonoBehaviour
 {   

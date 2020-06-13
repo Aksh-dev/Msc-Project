@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace VRAVE
+namespace VR
 {
 public class ChangeSelected : MonoBehaviour {
 	private EventSystem eventSystem;
@@ -18,7 +18,7 @@ public class ChangeSelected : MonoBehaviour {
 		
 		// Update is called once per frame
 		void Update () {
-			if (Input.GetButtonUp (VRAVEStrings.Left_Paddle)) {
+			if (Input.GetButtonUp (VRStrings.Left_Paddle)) {
 				currentSelected++;
 				if (currentSelected == buttons.Length) {
 					currentSelected = 0;

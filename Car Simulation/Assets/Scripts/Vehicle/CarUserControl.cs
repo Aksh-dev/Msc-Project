@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-namespace VRAVE
+namespace VR
 {
     //Necessary requirement?
     //[RequireComponent(typeof (CarController))]

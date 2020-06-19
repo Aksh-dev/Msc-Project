@@ -752,12 +752,6 @@ MeshFilter:
 Transform:
   m_PrefabParentObject: {fileID: 484624, guid: 9dac8ee370e416742b46452d2bfc0d14, type: 2}
   m_PrefabInternal: {fileID: 22596504}
---- !u!114 &31359835 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11483392, guid: 4a570de7658a7de43bc06bb0fd03fb9f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1047331125}
-  m_Script: {fileID: 11500000, guid: 70852dc981465ea48bb527b9e33a87fd, type: 3}
 --- !u!4 &32078222 stripped
 Transform:
   m_PrefabParentObject: {fileID: 421902, guid: b00239937d047a94284b1384d1e046a0, type: 2}
@@ -17464,7 +17458,7 @@ GameObject:
   - component: {fileID: 825109859}
   - component: {fileID: 825109865}
   m_Layer: 0
-  m_Name: UserCar_4-15
+  m_Name: Car
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17477,7 +17471,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 825109858}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3991959e2b72d841844ff931042d4ff, type: 3}
   m_Name: 
@@ -17497,9 +17491,9 @@ MonoBehaviour:
   m_Driving: 0
   m_StopWhenTargetReached: 0
   m_ReachTargetThreshold: 2
-  circuit: {fileID: 31359835}
+  circuit: {fileID: 1387243195}
   m_isCircuit: 0
-  m_isUser: 1
+  m_isUser: 0
 --- !u!114 &825109860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17507,7 +17501,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 825109858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49f584e2113771e44a5cc8afd946dedc, type: 3}
   m_Name: 
@@ -17521,7 +17515,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 825109858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47a4c780d1ee6ae4f9779a79c305b47e, type: 3}
   m_Name: 
@@ -17559,7 +17553,7 @@ MonoBehaviour:
   m_MaxHandbrakeTorque: 100000000
   m_Downforce: 250
   m_SpeedType: 0
-  m_Topspeed: 30
+  m_Topspeed: 25
   m_RevRangeBoundary: 1000
   m_SlipLimit: 100
   m_BrakeTorque: 15000
@@ -30045,6 +30039,10 @@ Prefab:
       propertyPath: cameraFade
       value: 
       objectReference: {fileID: 1102716907}
+    - target: {fileID: 149030, guid: 5ade1f05f8f8e4a4fa8a2a4e3719fef9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ade1f05f8f8e4a4fa8a2a4e3719fef9, type: 2}
   m_IsPrefabParent: 0
@@ -30619,6 +30617,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0ea640a62ff04f84888eb11d74ada53f, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1387243195 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11456678, guid: 9fed965579dfcad43b1a7a2ad13d74c1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2025355466}
+  m_Script: {fileID: 11500000, guid: 70852dc981465ea48bb527b9e33a87fd, type: 3}
 --- !u!4 &1387254463 stripped
 Transform:
   m_PrefabParentObject: {fileID: 478966, guid: 2130bffd928065441aada7502efa23c0, type: 2}

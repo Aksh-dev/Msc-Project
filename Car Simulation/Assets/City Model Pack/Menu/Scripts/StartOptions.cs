@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using VRStandardAssets.Utils;
 
-namespace VR
+namespace VRAVE
 {
 	public class StartOptions : MonoBehaviour
 	{

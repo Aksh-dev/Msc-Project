@@ -12,6 +12,8 @@ namespace VR
 	//	[RequireComponent(typeof (ObstacleHandler))]
 	public class CarAIControl : MonoBehaviour
 	{
+		public  GameObject sound;
+		public GameObject panel1;
 		public enum BrakeCondition
 		{
 			NeverBrake,
@@ -250,23 +252,7 @@ namespace VR
 					accel = accel * 10f;
 				}
 
-                /*
-                // FOLLOWING BEHAVIOR ONLY
-                Mathf.Clamp(AccelMultiplier, -10, 10);
-                if(TooClose)
-                {
-                    //m_CarController.MaxSpeed = Time.deltaTime * m_CarController.MaxSpeed;
-                    accel = -1*accel - m_accelMultiplier*(accel*Time.deltaTime);
-                    Debug.Log("Too Close Accel : " + accel + "  MaxSpeed: " + m_CarController.MaxSpeed);
-                    
-                }
-                else if(TooFar)
-                {
-                    //m_CarController.MaxSpeed = Time.deltaTime * m_CarController.MaxSpeed;
-                    accel = accel + m_accelMultiplier*(accel*Time.deltaTime);
-                    Debug.Log("Too Far Accel : " + accel + "  MaxSpeed: " + m_CarController.MaxSpeed);
-                }
-                */
+                
                
 				m_CarController.Move (steer, accel, accel, 0f);
 
@@ -278,6 +264,9 @@ namespace VR
 				// if appropriate, stop driving when we're close enough to the target.
 				if (m_StopWhenTargetReached && localTarget.magnitude < m_ReachTargetThreshold) {
 					m_Driving = false;
+				    sound.SetActive(false);
+					panel1.SetActive (true);
+
 				} else if (!m_StopWhenTargetReached && localTarget.magnitude < m_ReachTargetThreshold) {
 					if (m_isCircuit) {
 
@@ -296,32 +285,6 @@ namespace VR
 		}
 
 
-		//private void OnCollisionStay (Collision col)
-		//{
-		//	// detect collision against other cars, so that we can take evasive action
-		//	if (col.rigidbody != null) {
-		//		var otherAI = col.rigidbody.GetComponent<CarAIControl> ();
-		//		if (otherAI != null) {
-		//			// we'll take evasive action for 1 second
-		//			m_AvoidOtherCarTime = Time.time + 1;
-
-		//			// but who's in front?...
-		//			if (Vector3.Angle (transform.forward, otherAI.transform.position - transform.position) < 90) {
-		//				// the other ai is in front, so it is only good manners that we ought to brake...
-		//				m_AvoidOtherCarSlowdown = 0.5f;
-		//			} else {
-		//				// we're in front! ain't slowing down for anybody...
-		//				m_AvoidOtherCarSlowdown = 1;
-		//			}
-
-		//			// both cars should take evasive action by driving along an offset from the path centre,
-		//			// away from the other car
-		//			var otherCarLocalDelta = transform.InverseTransformPoint (otherAI.transform.position);
-		//			float otherCarAngle = Mathf.Atan2 (otherCarLocalDelta.x, otherCarLocalDelta.z);
-		//			m_AvoidPathOffset = m_LateralWanderDistance * -Mathf.Sign (otherCarAngle);
-		//		}
-		//	}
-		//}
 
 		public void SetTarget (Transform target, bool stopWhenTargetReached)
 		{
@@ -332,6 +295,8 @@ namespace VR
 			// set this really high to ensure the car doesn't collide with the obstacle
 			if (m_StopWhenTargetReached) {
 				m_ReachTargetThreshold = 15f;
+				sound.SetActive (false);
+
 			}
 		}
 			

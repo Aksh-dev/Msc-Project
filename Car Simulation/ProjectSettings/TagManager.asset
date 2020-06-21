@@ -12,6 +12,7 @@ TagManager:
   - LeftPaddle
   - RightPaddle
   - AmbientAudio
+  - Urban
   layers:
   - Default
   - TransparentFX

@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: d6f20800f61d3d34eb2f9be7f3770ff4
   - enabled: 1
-    path: Assets/Scenes/other.unity
-    guid: 6bfad7832aadfd14fbbb604b65cd1831
-  - enabled: 1
     path: Assets/Scenes/Car Simulation I.unity
     guid: d307df7bf802c0747a9142f164e7c477
+  - enabled: 1
+    path: Assets/Scenes/Car Simulation II.unity
+    guid: 293516547dca3874f968c0566548d5e8

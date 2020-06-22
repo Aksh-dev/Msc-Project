@@ -52,30 +52,16 @@ namespace VRAVE
 			playMusic.PlayLevelMusic ();
 		}
 
-		public void CollisionAvoidance ()
+		public void CarSimulation1 ()
 		{
 			sceneToStart = 1;
 			cameraFade.StartAlphaFade(Color.black, false, 3f);
 			StartButtonClicked ();
 		}
-
-		public void LanePassing ()
+			
+		public void CarSimulation2 ()
 		{
 			sceneToStart = 2;
-			cameraFade.StartAlphaFade(Color.black, false, 3f);
-			StartButtonClicked ();
-		}
-
-		public void Weather ()
-		{
-			sceneToStart = 3;
-			cameraFade.StartAlphaFade(Color.black, false, 3f);
-			StartButtonClicked ();
-		}
-
-		public void Lobby ()
-		{
-			sceneToStart = 4;
 			cameraFade.StartAlphaFade(Color.black, false, 3f);
 			StartButtonClicked ();
 		}

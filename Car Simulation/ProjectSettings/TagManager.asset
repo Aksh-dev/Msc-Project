@@ -13,6 +13,7 @@ TagManager:
   - RightPaddle
   - AmbientAudio
   - Urban
+  - Case_1
   layers:
   - Default
   - TransparentFX

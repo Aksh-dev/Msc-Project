@@ -6,11 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/animation.unity
+    guid: a8718b309b46c2c4d91cf0ea9ca5f964
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: d6f20800f61d3d34eb2f9be7f3770ff4
   - enabled: 1
-    path: Assets/Scenes/Car Simulation I.unity
-    guid: d307df7bf802c0747a9142f164e7c477
+    path: Assets/Scenes/Simulation.unity
+    guid: ffc167625df59ae40a59984a6e4d508e
   - enabled: 1
     path: Assets/Scenes/Car Simulation II.unity
     guid: 293516547dca3874f968c0566548d5e8
+  m_configObjects: {}

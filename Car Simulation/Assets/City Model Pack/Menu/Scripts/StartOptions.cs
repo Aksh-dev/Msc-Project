@@ -54,14 +54,14 @@ namespace VRAVE
 
 		public void CarSimulation1 ()
 		{
-			sceneToStart = 1;
+			sceneToStart = 2;
 			cameraFade.StartAlphaFade(Color.black, false, 3f);
 			StartButtonClicked ();
 		}
 			
 		public void CarSimulation2 ()
 		{
-			sceneToStart = 2;
+			sceneToStart = 3;
 			cameraFade.StartAlphaFade(Color.black, false, 3f);
 			StartButtonClicked ();
 		}

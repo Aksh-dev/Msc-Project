@@ -7,8 +7,8 @@ using System.Collections.Generic;
 
 namespace VR
 {
-	//	[RequireComponent(typeof (CarController))]
-	//	[RequireComponent(typeof (Sensors))]
+	//	[RequireComponent(typeof (Sensors))]	//	[RequireComponent(typeof (CarController))]
+
 	//	[RequireComponent(typeof (ObstacleHandler))]
 	public class CarAIControl : MonoBehaviour
 	{
@@ -187,7 +187,7 @@ namespace VR
 						// check out the distance to target
 						Vector3 delta = m_Target.position - transform.position;
 						float distanceCautiousFactor = Mathf.InverseLerp (m_CautiousMaxDistance, 0, delta.magnitude);
-
+							print("The distance of the target is" + distanceCautiousFactor);
 						// also consider the current amount we're turning, multiplied up and then compared in the same way as an upcoming corner angle
 						float spinningAngle = m_Rigidbody.angularVelocity.magnitude * m_CautiousAngularVelocityFactor;
 

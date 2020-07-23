@@ -18,7 +18,7 @@ public class case_2 : MonoBehaviour
 
         if (timer > waitTime)
         {
-            car.SetActive(false);
+            //car.SetActive(false);
             panel.SetActive(true);
         }
     }

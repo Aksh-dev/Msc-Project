@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class case_1 : MonoBehaviour
 {
-    private float waitTime = 30.0f;
+    private float waitTime = 6.0f;
     private float timer = 0.0f;
     public GameObject car;
     public GameObject panel;
@@ -18,7 +18,7 @@ public class case_1 : MonoBehaviour
      
         if (timer > waitTime)
         {
-            car.SetActive(false);
+            //car.SetActive(false);
             panel.SetActive(true);
         }
     }

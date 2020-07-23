@@ -65,6 +65,12 @@ namespace VRAVE
 			cameraFade.StartAlphaFade(Color.black, false, 3f);
 			StartButtonClicked ();
 		}
+		public void CarSimulation3()
+		{
+			sceneToStart = 4;
+			cameraFade.StartAlphaFade(Color.black, false, 3f);
+			StartButtonClicked();
+		}
 
 		public void StartButtonClicked ()
 		{

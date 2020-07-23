@@ -15,7 +15,7 @@ public class wait : MonoBehaviour
    
     IEnumerator test()
     {
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(3);
         SceneManager.LoadScene("Menu");
 
     }

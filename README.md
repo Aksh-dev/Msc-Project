@@ -1,4 +1,4 @@
 # Msc-Project
 
-*Updates*
-The Speed data collected by the user is stored in the folder Assets/Resources/Data.csv 
+Firstly the reference speed of the car is shown to the user , before proceeding to the main scenes. The reference speed is illustrated as below:
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/img1.jpg?raw=true)

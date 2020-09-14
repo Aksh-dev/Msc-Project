@@ -6,7 +6,7 @@ categorize and make sense of specific sentences that might be otherwise consider
 The dataset used for this is in the file "results-survey173122.csv"
 
 # Unity Application
-The  dedveloped project is under the folder Car simulation.
+The  developed project is under the folder "Car simulation".
 Firstly the reference speed of the car is shown to the user , before proceeding to the main scenes. 
 
 The main scene consists of three simuations which were developed in VR, and the user is asked to guess the speed based on the simulation.
